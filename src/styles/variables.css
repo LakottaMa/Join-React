@@ -1,0 +1,16 @@
+:root {
+    --clr-dark-bg: #2A3647;
+    --clr-light-bg: #F6F7F8;
+    --clr-light-blue: #29ABE2;
+    --clr-error-input: #FF001F;
+    --clr-error-text: #FF8190;
+    --clr-light-gray: #CDCDCD;
+    --clr-gray: #A8A8A8;
+    --clr-button-clicked: #091931;
+    --clr-label-user-story: #0038FF;
+    --clr-label-technical-task: #1FD7C1;
+    --clr-progress-subtask: #4589FF;
+    --clr-urgency-high: #FF3D00;
+    --clr-urgency-low: #7AE229;
+    --clr-urgency-medium: #FFA800;
+}

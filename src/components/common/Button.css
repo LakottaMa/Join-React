@@ -1,0 +1,34 @@
+.base-button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.button-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.button-icon:last-child {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.button-icon svg,
+.button-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.button-primary {
+    background-color: var(--clr-dark-bg);
+    color: white;
+}
+
+.button-secondary {
+    background-color: white;
+    color: var(--clr-dark-bg);
+}
