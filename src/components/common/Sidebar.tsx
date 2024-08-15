@@ -7,7 +7,7 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Summary</NavLink>
+            <NavLink to="/summary" className={({ isActive }) => (isActive ? 'active' : '')}>Summary</NavLink>
           </li>
           <li>
             <NavLink to="/add-task" className={({ isActive }) => (isActive ? 'active' : '')}>Add Task</NavLink>
