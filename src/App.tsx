@@ -6,25 +6,27 @@ import AddTaskPage from "./pages/AddTaskPage";
 import ContactsPage from "./pages/ContactsPage";
 import LegalNoticePage from "./pages/LegalNoticePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="app">
+    <>
+    <div className="app">
+      <Router>
         <Sidebar />
-        <main className="main-content">
+        <main>
           <Routes>
             <Route path="/" element={<SummaryPage />} />
             <Route path="/board" element={<BoardPage />} />
             <Route path="/add-task" element={<AddTaskPage />} />
             <Route path="/contacts" element={<ContactsPage />} />
-
             <Route path="/legal-notice" element={<LegalNoticePage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           </Routes>
         </main>
-      </div>
-    </Router>
+      </Router>
+    </div>
+    </>
   );
 }
 

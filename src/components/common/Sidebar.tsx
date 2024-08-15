@@ -3,7 +3,7 @@ import './Sidebar.css';
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar">
+    <aside>
       <nav>
         <ul>
           <li>
