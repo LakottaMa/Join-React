@@ -8,6 +8,7 @@ import AddTaskPage from './pages/AddTaskPage';
 import ContactsPage from './pages/ContactsPage';
 import LegalNoticePage from './pages/LegalNoticePage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import Header from './components/common/Header';
 
 const PageTransition = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -41,14 +42,17 @@ const AnimatedRoutes = () => {
 
 function App() {
   return (
-    <div className="app">
-      <Router>
-        <Sidebar />
-        <main>
-          <AnimatedRoutes />
-        </main>
-      </Router>
-    </div>
+    <>
+      <div className="app">
+        <Router>
+          <Sidebar />
+          <main>
+            <Header />
+            <AnimatedRoutes />
+          </main>
+        </Router>
+      </div>
+    </>
   );
 }
 
