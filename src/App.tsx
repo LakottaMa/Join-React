@@ -42,17 +42,15 @@ const AnimatedRoutes = () => {
 
 function App() {
   return (
-    <>
-      <div className="app">
-        <Router>
-          <Sidebar />
-          <main>
-            <Header />
-            <AnimatedRoutes />
-          </main>
-        </Router>
-      </div>
-    </>
+    <div className="app">
+      <Router>
+        <Sidebar />
+        <main>
+          <Header />
+          <AnimatedRoutes />
+        </main>
+      </Router>
+    </div>
   );
 }
 

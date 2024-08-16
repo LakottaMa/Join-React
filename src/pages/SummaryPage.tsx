@@ -1,13 +1,13 @@
-
+import Summary from "../components/Summary/Summary";
 
 
 
 const SummaryPage = () => {
     return (
-        <div>
-            <h1>Summary</h1>
-        </div>
+        <>
+            <Summary />
+        </>
     );
-}
+};
 
 export default SummaryPage

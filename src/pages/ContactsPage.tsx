@@ -1,13 +1,13 @@
+import ContactItem from "../components/Contacts/ContactItem";
 
 
 
 const ContactsPage = () => {
-
     return (
-        <div>
-            <h1>Contacts</h1>
-        </div>
+        <>
+            <ContactItem />
+        </>
     );
-}
+};
 
 export default ContactsPage
