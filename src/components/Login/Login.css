@@ -1,0 +1,117 @@
+@import '/src/styles/variables.css';
+
+.auth-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100dvh;
+    width: 100vw;
+    background-color: var(--clr-light-bg);
+    z-index: 1;
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 16px;
+    height: 96px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 652px;
+    gap: 32px;
+    border: none;
+    border-radius: 30px;
+    padding: 48px 115px;
+    background-color: white;
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.04);
+
+    h1 {
+        font-size: 64px;
+    }
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &::placeholder {
+        color: var(--clr-light-gray);
+    }
+}
+
+.auth-checkbox {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    input[type="checkbox"] {
+        cursor: pointer;
+    }
+
+    a{
+        color: var(--clr-light-blue);
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        &:hover {
+            scale: 1.05;
+            background-color: transparent;
+            color: var(--clr-light-blue);
+        }
+    }
+}
+
+.login-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.login-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+
+    a {
+        width: fit-content;
+        padding: 0 8px;
+        color: var(--clr-gray);
+
+        &:hover {
+            scale: 1.1;
+            background-color: var(--clr-light-bg);
+            color: var(--clr-light-blue);
+        }
+    }
+}

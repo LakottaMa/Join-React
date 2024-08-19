@@ -1,0 +1,38 @@
+@import '/src/styles/variables.css';
+
+
+.auth-container-signup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100dvh;
+    width: 100vw;
+    background-color: var(--clr-light-bg);
+    z-index: 1;
+}
+
+.signup-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 652px;
+    gap: 32px;
+    border: none;
+    border-radius: 30px;
+    padding: 48px 115px;
+    background-color: white;
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.04);
+
+    h1 {
+        font-size: 64px;
+    }
+}

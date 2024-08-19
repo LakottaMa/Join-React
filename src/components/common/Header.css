@@ -23,6 +23,7 @@ header {
         width: 20px;
         height: 20px;
         cursor: pointer;
+
         &:hover {
             scale: 1.1;
         }
@@ -38,6 +39,16 @@ header {
     border: 3px solid rgb(42, 54, 71);
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.175s;
+
+    &:hover {
+        background-color: var(--clr-light-gray);
+        border: 3px solid var(--clr-light-blue);
+
+        span {
+            color: var(--clr-dark-bg);
+        }
+    }
 
     span {
         font-size: 24px;
